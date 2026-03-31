@@ -115,13 +115,14 @@ h4 {
     bottom: 0;
     z-index: -1;
     overflow: hidden;
+    background: linear-gradient(135deg, #001a33 0%, #004080 50%, #806600 100%);
 }
 
 .blob {
     position: absolute;
     border-radius: 50%;
     filter: blur(80px);
-    opacity: 0.4;
+    opacity: 0.6;
     animation: float 20s infinite alternate;
 }
 
@@ -130,7 +131,7 @@ h4 {
     left: -10%;
     width: 50vw;
     height: 50vw;
-    background: radial-gradient(circle, var(--acc-purple), transparent 70%);
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.5), transparent 70%);
 }
 
 .blob-2 {
@@ -138,7 +139,7 @@ h4 {
     right: -10%;
     width: 60vw;
     height: 60vw;
-    background: radial-gradient(circle, var(--acc-cyan), transparent 70%);
+    background: radial-gradient(circle, rgba(0, 136, 255, 0.5), transparent 70%);
     animation-delay: -5s;
 }
 
