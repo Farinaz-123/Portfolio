@@ -254,19 +254,24 @@
                         </div>
                     </div>
 
-                    <form class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <input type="hidden" name="access_key" value="1938e8b1-2db8-4fe2-a46f-8a00b6486b20">
+                        
+                        <!-- Optional: redirect to a thank you page or use AJAX -->
+                        <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
+
                         <div class="input-group">
-                            <input type="text" id="name" required placeholder=" ">
+                            <input type="text" name="name" id="name" required placeholder=" ">
                             <label for="name">Name</label>
                             <div class="input-focus-border"></div>
                         </div>
                         <div class="input-group">
-                            <input type="email" id="email" required placeholder=" ">
+                            <input type="email" name="email" id="email" required placeholder=" ">
                             <label for="email">Email</label>
                             <div class="input-focus-border"></div>
                         </div>
                         <div class="input-group">
-                            <textarea id="message" rows="4" required placeholder=" "></textarea>
+                            <textarea name="message" id="message" rows="4" required placeholder=" "></textarea>
                             <label for="message">Message</label>
                             <div class="input-focus-border"></div>
                         </div>
